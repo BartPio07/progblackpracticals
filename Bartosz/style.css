@@ -1,0 +1,62 @@
+/* General styles */
+
+html {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 10px;
+background-color: rgb(30, 40, 60);
+color: white;
+}
+
+h2 {
+font-size: 2rem;
+
+}
+
+ul,ol,dl,p {
+font-size: 1.5rem;
+}
+
+li, p {
+line-height: 1.5;
+}
+
+/* Unordered list styles */
+
+ul {
+padding-left: 3rem;
+list-style-type: disc;
+}
+
+ul li {
+padding-left: 2rem;
+background-image: url(star.svg);
+background-position: 0 0;
+background-size: 1.6rem 1.6rem;
+background-repeat: no-repeat;
+}
+
+/* Ordered list styles */
+
+ol {
+list-style-type: lower-roman;
+}
+
+/* Description list styles */
+
+dd, dt {
+line-height: 1.5;
+background-color: rgb(25, 75, 100);
+color: gold;
+padding-left: 10px;
+}
+
+dt {
+font-weight: bold;
+color: rgb(25, 75, 100);
+background-color:gold;
+width: 150px;
+}
+
+#humous-img, #pitta-img, #halloumi-img, #green-salad-img{
+    width: 50px;
+}
