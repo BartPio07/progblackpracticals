@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1><u>Cars - their history and why they are cool</u></h1>
+    <fieldset>
+        <legend><u>Facts about cars</u></legend>
+        <ul>
+            <li>The first car ever made was the Benz-Patent-Motorwagen</li>
+            <li>Todays fastest car to be in production is the Bugatti Chiron Super Sport</li>
+            <li>The current car with the fastest acceleration is the McMurty Speirling</li>
+        </ul>
+    </fieldset>
+    <div id="image-div">
+        <img id="mcmurty-img" src="data:image/jpeg;base64,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" alt="McMurty Speirling">
+        <img id="benz-motorwagon-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6KHP9W1yaFZiK0ssGwky-rwdqdar0SiRTaA&s" alt="Benz Patent Motorwagon">
+        <img id="bugatti-chiron-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDHOG-jdrrCtL_ze7kZlVzGmFP9Ny9ejySmw&s" alt="Bugatti Chiron Super Sport">
+    </div>
+    <div id="car-fact-div">
+        <div id="mcmurty-fact-div">
+            <p><u>The McMurty Spierling</u></p>
+            <ul>
+                <li>0-60 (mph) in 1.4 seconds</li>
+                <li>Costs £984,000</li>
+                <li>British built car</li>
+                <li>Has a total of 1000HP (very powerful)</li>
+            </ul>
+        </div>
+        <div id="benz-motorwagon-div">
+            <p><u>The Benz Patent Motorwagon</u></p>
+            <ul>
+                <li>Top speed of 10MPH</li>
+                <li>In todays money, it would have cost around £3,900</li>
+                <li>German built car</li>
+                <li>Has a total of 0.9HP (very weak)</li>
+            </ul>
+        </div>
+        <div id="bugatti-chiron-div">
+            <p><u>Bugatti Chiron Super Sport</u></p>
+            <ul>
+                <li>Top speed of 300+MPH</li>
+                <li>Costs a measly £4.2 Million</li>
+                <li>French built car</li>
+                <li>Has total of 1600 HP (Amazingly powerful)</li>
+            </ul>
+        </div>
+    </div>
+    <h2><u>German Cars Of This Century</u></h2>
+    <div id="porsche-div">
+        <h3><u>Porsche</u></h3>
+        <p class="german-info">My favourite: <a target="_blank" href="https://www.porsche.com/uk/models/911/911-gt3-rs/911-gt3-rs/">Porsche GT3 RS</a></p>
+        <p class="german-info">The porsche is an infamous car brand, specialising in sports cars. Creating some of the most popular and loved cars.
+            Such as the Porsche 911, 718 Cayman, 718 Boxer. Over the years, Porsche has also started to include luxury SUV's into their range, such as
+            the Cayanne and Macan. Porsche has competed in the Le Mans race (the worlds most prestigious endurance race) and has overall 19 victories.
+        </p>
+    </div>
+    <div id="audi-div">
+        <h3><u>Audi</u></h3>
+        <p class="german-info">My favourite: <a target="_blank" href="https://www.audi.co.uk/en/models/a6/rs-6-avant/">Audi RS6</a></p>
+        <p class="german-info">Audi is a well-known German car brand recognised for its innocation, technology, and luxury deissgn.
+            Audi preduces a wide range of vehicles - from sporty models like the R8 and TT(RS), to luxury sedans, hatchbacks and SUV's
+            like the A4's, A6's and the Q5's and the Q8's, which also all have their RS versions for sport. The most popular of these Cars
+            would probably be the RS3, since it is one of the cheaper sport cars which greatly appeals to the younger people.
+        </p>
+    </div>
+    <div id="bmw-div">
+        <h3><u>Bmw</u></h3>
+        <p class="german-info">My favourite: <a target="_blank" href="https://configure.bmw.co.uk/en_GB/configure/G80/M3XC/FLKSW,P0300,S01CB,S01DF,S01MB,S01U0,S0230,S02PA,S02T4,S02VB,S02VC,S02VF,S0302,S0420,S0428,S0430,S0431,S0459,S0488,S0493,S0494,S04GQ,S04LN,S04NE,S04U0,S0534,S0544,S05AV,S05DA,S05DC,S05DM,S0654,S0688,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06VB,S0712,S0760,S0775,S07M9,S0812,S0850,S0853,S0880,S08EK,S08KA,S08R3,S08R9,S08SM,S08TF,S08TG,S08WD,S08WM">BMW M3 Competition</a></p>
+        <p class="german-info">BWM is also a very well known car brand, known for its performance, luxury and driving experience. The BMW name is an
+            acronym for Bavarian Motor Works (in German, Bayerische Motoren Werke). BMW also produces many types of cars, from
+            sporty coupes like the M4 and Z4, to comfortable sedans and SUV's like the 3 and 5 series and the X5. BMW also has their own racing brand of cars,
+            more track focused, which are marked the an M competition, for example, M3 Competition.
+        </p>
+    </div>
+    <div id="mercedes-div">
+        <h3><u>Mercedes</u></h3>
+        <p class="german-info">My favourite: <a target="_blank" href="https://www.mercedes-benz.co.uk/passengercars/mercedes-benz-cars/car-configurator.html/motorization/CCci/GB/en/bm/2060802">AMG C 63 S</a></p>
+        <p class="german-info">mercedes-benz is one of he most iconic German car brans, known mainly for its luxury, elegance and advanced engineering.
+            Mercedes now focuses on creating cars that combine comfort, performance and amazing technology. They also produce many types of cars such as
+            luxury sedans like the c-class and s-class, they also have their own sport section called AMG, and also produce powerful SUV's like the
+            GLC and GLE. 
+        </p>
+    </div>
+    <div id="quiz-title-div">
+        <h2>Time for a quiz - Logos!</h2>
+        <button id="check-answers-btn">Check Answers</button>
+        <button id="reset-btn">Reset</button>
+        <p id="attempts-txt">Attempts: 1 / 10</p>
+    </div>
+    <div id="quiz-div">
+        <div class="quiz-question">
+            <img class="quiz-logo" src="https://www.edigitalagency.com.au/wp-content/uploads/Tesla-logo-red-large-size.png" alt="Tesla Logo">
+            <input class="quiz-input" type="text" placeholder="Guess">
+            <img class="answer-img" src="images/questionmark.png" alt="check/cross/question img">
+        </div>
+        <div class="quiz-question-1">
+            <img class="quiz-logo" src="https://cdn.freebiesupply.com/logos/large/2x/ferrari-ges-logo-png-transparent.png" alt="Ferrari Logo">
+            <input class="quiz-input" type="text" placeholder="Guess">
+            <img class="answer-img" src="images/questionmark.png" alt="check/cross/question img">
+        </div>
+        <div class="quiz-question">
+            <img class="quiz-logo" src="images/bmw-logo.png" alt="BMW logo">
+            <input class="quiz-input" type="text" placeholder="Guess">
+            <img class="answer-img" src="images/questionmark.png" alt="check/cross/question img">
+        </div>
+        <div class="quiz-question-1">
+            <img class="quiz-logo" src="images/audi-logo.png" alt="Audi Logo">
+            <input class="quiz-input" type="text" placeholder="Guess">
+            <img class="answer-img" src="images/questionmark.png" alt="check/cross/question img">
+        </div>
+        <div class="quiz-question">
+            <img class="quiz-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/1200px-Mercedes-Logo.svg.png" alt="Mercedez-benz Logo">
+            <input class="quiz-input" type="text" placeholder="Guess">
+            <img class="answer-img" src="images/questionmark.png" alt="check/cross/question img">
+        </div>
+        <div class="quiz-question-1">
+            <img class="quiz-logo" src="images/porsche-logo.png" alt="Porsche Logo">
+            <input class="quiz-input" type="text" placeholder="Guess">
+            <img class="answer-img" src="images/questionmark.png" alt="check/cross/question img">
+        </div>
+        <div class="quiz-question">
+            <img class="quiz-logo" src="https://cdn.freebiesupply.com/logos/large/2x/volkswagen-10-logo-png-transparent.png" alt="Volkswagen Logo">
+            <input class="quiz-input" type="text" placeholder="Guess">
+            <img class="answer-img" src="images/questionmark.png" alt="check/cross/question img">
+        </div>
+        <div class="quiz-question-1">
+            <img class="quiz-logo" src="images/lamborghini-logo.png" alt="Lamborghini Logo">
+            <input class="quiz-input" type="text" placeholder="Guess">
+            <img class="answer-img" src="images/questionmark.png" alt="check/cross/question img">
+        </div>
+        <div class="quiz-question">
+            <img class="quiz-logo" src="images/opel-logo.png" alt="Opel Logo">
+            <input class="quiz-input" type="text" placeholder="Guess">
+            <img class="answer-img" src="images/questionmark.png" alt="check/cross/question img">
+        </div>
+        <div class="quiz-question-1">
+            <img class="quiz-logo" src="https://cdn.freebiesupply.com/logos/large/2x/maybach-logo-png-transparent.png" alt="Maybach Logo">
+            <input class="quiz-input" type="text" placeholder="Guess">
+            <img class="answer-img" src="images/questionmark.png" alt="check/cross/question img">
+        </div>
+    </div>
+    <div id="quiz-overlay">
+        <div class="overlay-content">
+            <h1 id="correct-title-txt">🏁 Congratulations!</h1>
+            <p id="correct-txt">You got all the answers correct!</p>
+        </div>
+    </div>
+</body>
+</html>

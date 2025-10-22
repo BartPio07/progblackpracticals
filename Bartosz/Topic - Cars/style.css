@@ -1,0 +1,249 @@
+:root{
+    --mainColour: rgb(0, 70, 100);
+    --mainColourDark: rgb(0, 40, 70);
+}
+
+/* general styling for the page */
+html{
+    color: white;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: center;
+}
+
+
+h1, h2{
+    background-color: var(--mainColour);
+    color: gold;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: max-content;
+    border: solid;
+    border-width: 1px;
+    border-color: gold;
+    box-shadow: 0px 0px 10px 2px gold;
+}
+
+h3{
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 10px;
+    margin-top: 0px;
+}
+
+fieldset{
+    width: max-content;
+    padding: 20px;
+    border-color: gold;
+    background-color: var(--mainColour);
+    box-shadow: 0px 0px 10px 2px gold;
+}
+
+li{
+    font-size: 15px;
+    list-style: circle;
+}
+
+a{
+    color: gold;
+}
+
+button{
+    background-color: var(--mainColour);
+    color: white;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+    border: solid;
+    border-color: gold;
+    border-width: 1px;
+    box-shadow: 0px 0px 10px 2px gold;
+    transition: 0.1s;
+    margin-left: 10px;
+}
+
+button:hover{
+    transition: 0.2s;
+    outline: solid;
+    outline-color: gold;
+    box-shadow: 0px 0px 20px 10px gold;
+}
+
+button:active{
+    transition: 0.05s;
+    outline: none;
+    outline-color: gold;
+    box-shadow: 0px 0px 10px 2px gold;
+}
+
+#mcmurty-img, #benz-motorwagon-img, #bugatti-chiron-img{
+    padding-top: 10px;
+    width: 300px;
+    height: 175px;
+}
+
+#benz-motorwagon-img, #bugatti-chiron-img{
+    padding-left: 10px;
+}
+
+#image-div{
+    display: flex;
+    flex-direction: row;
+}
+
+#mcmurty-fact-div, #benz-motorwagon-div, #bugatti-chiron-div{
+    background-color: var(--mainColour);
+    color: white;
+    width: 290px;
+    max-width: 290px;
+    height: fit-content;
+    padding-left: 8px;
+    box-shadow: 0px 0px 10px 2px gold;
+    border: solid;
+    border-width: 1px;
+    border-color: gold;
+}
+
+#benz-motorwagon-div, #bugatti-chiron-div{
+    margin-left: 10px;
+}
+
+#car-fact-div{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#porsche-div, #audi-div, #bmw-div, #mercedes-div{
+    background-color: var(--mainColour);
+    height: 210px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px 2px gold;
+    border: solid;
+    border-color: gold;
+    border-width: 1px;
+    max-width: 917px;
+}
+
+.german-info{
+    padding-left: 10px;
+    padding-top: 0px;
+    margin: 0px;
+    padding-right: 10px;
+}
+
+
+#quiz-div{
+    background-color: var(--mainColour);
+    width: 918px;
+    max-width: 918px;
+    height: 1200px;
+    box-shadow: 0px 0px 10px 2px gold;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: solid;
+    border-width: 1px;
+    border-color: gold;
+}
+
+.quiz-question, .quiz-question-1{
+    background-color: var(--mainColourDark);
+    display: flex;
+    height:120px;
+    width: 917px;
+    align-items: center;
+}
+
+.quiz-question-1{
+    background-color: var(--mainColour);
+}
+
+.quiz-logo{
+    padding: 10px;
+    width:100px;
+    height:100px;
+    padding-right: 50px;
+}
+
+#quiz-title-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quiz-input{
+    font-family: "Edu NSW ACT Cursive", cursive;
+    background-color: var(--mainColour);
+    font-size: 30px;
+    color: gold;
+    border: solid;
+    border-width: 1px;
+    border-color: gold;
+    box-shadow: 0px 0px 10px 2px gold;
+    height: 50px;
+    width: 500px;
+    margin-right: 70px;
+}
+
+.quiz-input::placeholder{
+    color: gold;
+    text-align: center;
+}
+
+.quiz-input:focus{
+    border-color: gold;
+    outline: solid;
+    outline-width: 5px;
+    box-shadow: 0px 0px 20px 10px gold;
+    transition: 0.1s;
+}
+
+.answer-img{
+    width: 100px;
+    height: 100px;
+}
+
+#attempts-txt{
+    margin-left: 10px;
+    background-color: var(--mainColour);
+    width: 179px;
+    height: 45px;
+    border: solid;
+    border-color: gold;
+    border-width: 1px;
+    box-shadow: 0px 0px 10px 2px gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz-overlay{
+    background-color: var(--mainColour);
+    height: 1200px;
+    width: 917px;
+    border: solid;
+    border-color: gold;
+    border-width: 1px;
+    box-shadow: 0px 0px 10px 2px gold;
+    display: None;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#correct-title-txt{
+    font-size: 75px;
+}
+
+#correct-txt{
+    font-size: 50px;
+}
